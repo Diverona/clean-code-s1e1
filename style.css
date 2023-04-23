@@ -132,6 +132,7 @@ display: flex;
 .checkbox-input {
     margin: 0 10px;
 }
+
 .type-text-input {
     width: 226px;
     flex-grow: 1;
