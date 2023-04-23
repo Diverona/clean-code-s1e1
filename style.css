@@ -22,7 +22,8 @@
 
 @media (max-width:768px) {
 
-.header { text-align: center;
+.header {
+  text-align: center;
 }
 
 }
@@ -52,7 +53,8 @@
     list-style: none;
 }
 
-.task-input,.button{
+.task-input,
+.button {
     outline: none;
 }
 
@@ -166,7 +168,8 @@ display: flex;
 }
 
 /* Edit Task */
-.task-input, .task-label_save {
+.task-input, 
+.task-label_save {
     display: none;
 }
 
