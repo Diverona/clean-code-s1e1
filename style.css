@@ -40,7 +40,7 @@
 .task-label {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .tasks-list {
@@ -161,13 +161,13 @@ display: flex;
 
 /* Completed */
 .task-label_completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task-input, .task-label_save {
-    display: none
+    display: none;
 }
 
 .task-label_edit {
