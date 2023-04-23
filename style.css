@@ -39,21 +39,21 @@
 
 .task-label {
     width: 56%;
-    display:inline-block;
+    display: inline-block;
     flex-grow: 1
 }
 
 .tasks-list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 .task-item {
-    list-style:none;
+    list-style: none;
 }
 
 .task-input,.button{
-    outline:none;
+    outline: none;
 }
 
 .task-button {
@@ -167,7 +167,7 @@ display: flex;
 
 /* Edit Task */
 .task-input, .task-label_save {
-    display:none
+    display: none
 }
 
 .task-label_edit {
