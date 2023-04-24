@@ -23,7 +23,7 @@
     <section class="add-task" id="topSectionForAddingElementToList">
       <h3 class="add-task__title section-title">Add Item</h3>
       <div class="add-task__wrapper">
-        <input class="add-task__input type-text-input" type="text">
+        <input class="add-task__input type-text-input" id="new-task" type="text">
         <button class="add-task__button task-button">Add</button>
       </div>
     </section>
@@ -40,7 +40,7 @@
             <img class="delete-button__img" src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="todo-tasks__item task-item">
+        <li class="todo-tasks__item task-item edit-mode">
           <input class="todo-tasks__checkbox checkbox-input" type="checkbox">
           <label class="todo-tasks__label task-label task-label_save">Go Shopping</label>
           <input class="todo-tasks__input type-text-input" type="text" value="Go Shopping">
@@ -57,8 +57,8 @@
       <ul class="completed__list tasks-list" id="completed-tasks">
         <li class="completed__item task-item">
           <input class="completed__checkbox checkbox-input" type="checkbox" checked>
-          <label class="completed-tasks__label task-label task-label_edit task-label_completed">
-            See the Doctor</label>
+          <label class="completed-tasks__label task-label task-label_edit task-label_completed"
+              >See the Doctor</label>
           <input class="completed-tasks__input task-input" type="text">
           <button class="completed-tasks__button task-button">Edit</button>
           <button class="todo-tasks__delete-button delete-button">
