@@ -9,7 +9,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 let taskInput=document.getElementById("new-task");//Add a new task.
-let addButton=document.querySelector('.add-task__button');//first button
+let addButton=document.querySelector(".add-task__button");//first button
 let incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
 let completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
@@ -32,9 +32,9 @@ let createNewTaskElement=function(taskString){
     let deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    listItem.classList='task-item';
-    checkBox.className='checkbox-input';
-    label.className='task-label task-label_edit';
+    listItem.classList="task-item";
+    checkBox.className="checkbox-input";
+    label.className="task-label task-label_edit";
 
     //Each elements, needs appending
     
@@ -46,8 +46,8 @@ let createNewTaskElement=function(taskString){
     editButton.className="task-button";
 
     deleteButton.className="delete-button";
-    deleteButtonImg.className='delete-button__img';
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="delete-button__img";
+    deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -72,7 +72,7 @@ let addTask=function(){
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 
-    taskInput.value = '';
+    taskInput.value = "";
 
 }
 
@@ -83,7 +83,7 @@ let editTask=function(){
 
     let tasksList = listItem.parentNode;
 
-    let editInput=listItem.querySelector('input[type=text]');
+    let editInput=listItem.querySelector("input[type=text]");
     let label=listItem.querySelector(".task-label");
     
     let editBtn=listItem.querySelector(".task-button");
@@ -91,20 +91,20 @@ let editTask=function(){
     
     //If class of the parent is .editmode
     if(containsClass){ 
-      if (tasksList.id === 'completed-tasks') {
-        label.className = 'task-label task-label_edit task-label_completed';
+      if (tasksList.id === "completed-tasks") {
+        label.className = "task-label task-label_edit task-label_completed";
       } else {
-        label.className = 'task-label task-label_edit';
+        label.className = "task-label task-label_edit";
       }
         //switch to .editmode
         //label becomes the inputs value.
         
-        editInput.className = 'task-input';
+        editInput.className = "task-input";
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
     }else{
-      label.className = 'task-label task-label_save';
-      editInput.className = 'type-text-input'; 
+      label.className = "task-label task-label_save";
+      editInput.className = "type-text-input"; 
 
         editInput.value=label.innerText;
         editBtn.innerText="Save";
@@ -135,10 +135,10 @@ let taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     let listItem=this.parentNode;
     let label=listItem.querySelector(".task-label");
-    let editInput=listItem.querySelector('input[type=text]');
+    let editInput=listItem.querySelector("input[type=text]");
     let editBtn=listItem.querySelector(".task-button");
-    label.className = 'task-label task-label_edit task-label_completed';
-    editInput.className = 'task-input';
+    label.className = "task-label task-label_edit task-label_completed";
+    editInput.className = "task-input";
     editBtn.innerText="Edit";
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
@@ -153,9 +153,9 @@ let taskIncomplete=function(){
   //Append the task list item to the #incompleteTasks.
   let listItem=this.parentNode;
   let label=listItem.querySelector(".task-label");
-  let editInput=listItem.querySelector('input[type=text]');
-  label.className = 'task-label task-label_edit';
-  editInput.className = 'task-input';
+  let editInput=listItem.querySelector("input[type=text]");
+  label.className = "task-label task-label_edit";
+  editInput.className = "task-input";
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem,taskCompleted);
 }
@@ -211,7 +211,7 @@ for (let i=0; i<completedTasksHolder.children.length;i++){
 
 
 
-// Issues with usability don't get seen until they are in front of a human tester.
+// Issues with usability don"t get seen until they are in front of a human tester.
 
 //prevent creation of empty tasks.
 
